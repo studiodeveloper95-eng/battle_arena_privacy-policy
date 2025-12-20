@@ -13,52 +13,64 @@
             --bg: #f8fafc;
             --card: #ffffff;
             --border: #e2e8f0;
+            --highlight-bg: #eff6ff;
         }
 
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         body {
-            margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-            background: var(--bg);
+            background-color: var(--bg);
             color: var(--text);
             line-height: 1.7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
         }
 
         .container {
+            width: 100%;
             max-width: 900px;
             margin: auto;
-            padding: 24px;
         }
 
         .card {
-            background: var(--card);
+            background-color: var(--card);
             border-radius: 12px;
             padding: 32px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
             border: 1px solid var(--border);
+            overflow: hidden;
         }
 
         h1 {
             color: var(--primary);
-            font-size: 2.2rem;
-            margin-bottom: 10px;
+            font-size: 2.4rem;
+            margin-bottom: 16px;
+            text-align: center;
         }
 
         .subtitle {
             color: #64748b;
+            font-size: 1rem;
+            text-align: center;
             margin-bottom: 30px;
         }
 
         h2 {
             color: var(--secondary);
+            font-size: 1.6rem;
             margin-top: 35px;
-            font-size: 1.4rem;
         }
 
         p {
+            font-size: 1rem;
             margin: 12px 0;
         }
 
@@ -72,11 +84,12 @@
         }
 
         .highlight {
-            background: #eff6ff;
+            background: var(--highlight-bg);
             border-left: 4px solid var(--secondary);
             padding: 14px 16px;
             margin: 20px 0;
             border-radius: 6px;
+            font-weight: bold;
         }
 
         footer {
@@ -90,8 +103,18 @@
             h1 {
                 font-size: 1.8rem;
             }
+
             .card {
                 padding: 24px;
+            }
+
+            .container {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            h2 {
+                font-size: 1.4rem;
             }
         }
     </style>
@@ -220,11 +243,4 @@
         </p>
 
         <footer>
-            © 2025 Battle Arena PK – Esports Tournaments. All rights reserved.
-        </footer>
-
-    </div>
-</div>
-
-</body>
-</html>
+            © 2025 Battle Arena PK – Esports T
