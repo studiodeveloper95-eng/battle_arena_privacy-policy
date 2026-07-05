@@ -92,6 +92,11 @@
             font-weight: bold;
         }
 
+        a {
+            color: var(--secondary);
+            word-break: break-all;
+        }
+
         footer {
             text-align: center;
             margin-top: 40px;
@@ -127,13 +132,13 @@
         <h1>Privacy Policy</h1>
         <p class="subtitle">
             Battle Arena – Esports Tournaments PK<br>
-            <strong>Effective Date:</strong> 20 December 2025
+            <strong>Effective Date:</strong> 6 July 2026
         </p>
 
         <p>
-            **Battle Arena – Esports Tournaments PK** (“we”, “our”, “us”) respects your privacy and is committed
+            <strong>Battle Arena – Esports Tournaments PK</strong> (“we”, “our”, “us”) respects your privacy and is committed
             to protecting your personal information. This Privacy Policy explains how we collect, use,
-            and safeguard your data when you use our mobile application, **Battle Arena – Tournaments** (the “App”).
+            and safeguard your data when you use our mobile application, <strong>Battle Arena – Tournaments</strong> (the “App”).
         </p>
 
         <div class="highlight">
@@ -145,15 +150,16 @@
         <ul>
             <li>Full Name</li>
             <li>Email Address</li>
-            <li>Profile Picture (from Google Sign-In)</li>
+            <li>Profile Picture (from Google Sign-In or uploaded by you)</li>
             <li>WhatsApp / Mobile Number</li>
-            <li>In-Game Name and In-Game UID</li>
+            <li>In-Game Name, In-Game UID and Team Name</li>
             <li>Payment Screenshot or Receipt (uploaded for payment verification purposes)</li>
+            <li>Mobile wallet account details (EasyPaisa / JazzCash) provided by you for prize withdrawals</li>
         </ul>
 
         <p><strong>b) Authentication Data</strong></p>
         <p>
-            We use **Firebase Authentication** for logging in with Email/Password or Google Sign-In. Your passwords are securely handled by Firebase and are never accessible to us.
+            We use <strong>Firebase Authentication</strong> for logging in with Email/Password or Google Sign-In. Your passwords are securely handled by Firebase and are never accessible to us.
         </p>
 
         <p><strong>c) App Usage Data</strong></p>
@@ -161,31 +167,52 @@
             <li>Tournament registrations</li>
             <li>Leaderboard performance</li>
             <li>App interaction data to help improve functionality and security</li>
+            <li>Crash logs and diagnostics (via Firebase Crashlytics)</li>
         </ul>
+
+        <p><strong>d) Advertising Data</strong></p>
+        <ul>
+            <li>Device Advertising ID</li>
+            <li>IP address and approximate (city-level) location derived from it</li>
+            <li>Device information and ad interaction data (views, clicks)</li>
+        </ul>
+        <p>
+            This data is collected by our advertising partner, Google AdMob, as described in the
+            <a href="#advertising">Advertising</a> section below.
+        </p>
 
         <h2>2. How We Use Your Information</h2>
         <ul>
             <li>Create and manage user accounts</li>
             <li>Register users in tournaments</li>
-            <li>Verify entry fee payments</li>
+            <li>Verify entry fee payments and process prize withdrawals</li>
             <li>Display leaderboards and prize results</li>
             <li>Send notifications and updates (via Firebase Cloud Messaging)</li>
+            <li>Display advertisements (via Google AdMob)</li>
             <li>Improve app functionality and security</li>
         </ul>
 
         <h2>3. Payments</h2>
         <p>
-            We do not collect or store any bank, card, or wallet information. Payments are processed externally via **EasyPaisa** or **JazzCash**. Users are required to upload a **payment receipt screenshot** for verification purposes only. These receipts are not stored long-term and will be deleted after tournament completion or verification resolution.
+            We do not process card payments inside the App and never collect bank card information. Deposits are made
+            externally via <strong>EasyPaisa</strong> or <strong>JazzCash</strong>, and users upload a
+            <strong>payment receipt screenshot</strong> for verification purposes. For prize withdrawals, users provide
+            their mobile wallet account details (EasyPaisa / JazzCash account number), which we store securely and use
+            only to process payouts. Payment receipts are retained only as long as needed for verification and dispute
+            resolution.
         </p>
 
         <h2>4. Data Security</h2>
         <p>
-            All user data is stored securely using **Firebase services**. We implement reasonable safeguards, but no system is 100% secure.
+            All user data is stored securely using <strong>Firebase services</strong> and encrypted in transit. We implement reasonable safeguards, but no system is 100% secure.
         </p>
 
         <h2>5. Data Sharing</h2>
         <p>
-            We do not sell, rent, or trade your personal information. We may share data only when required by law or to provide core App functionality.
+            We do not sell, rent, or trade your personal information. We share limited data
+            (Advertising ID, approximate location and device information) with <strong>Google AdMob</strong> solely for
+            the purpose of serving advertisements, as described in the <a href="#advertising">Advertising</a> section.
+            Beyond that, we may share data only when required by law or to provide core App functionality.
         </p>
 
         <h2 id="delete-account">6. User Rights</h2>
@@ -199,14 +226,16 @@
             You can delete your account directly within the App via the "Delete Account" option in the menu drawer. Alternatively, you can contact us at 📧 <strong>studio.developer95@gmail.com</strong> for assistance.
         </p>
 
-        <h2>7. Children’s Privacy</h2>
+        <h2>7. Age Requirement</h2>
         <p>
-            This app is not intended for children under the age of 13. We do not knowingly collect data from minors. Users under 18 should use the App with parental consent.
+            The App features tournaments with entry fees and cash prizes and is intended
+            <strong>only for users aged 18 years or older</strong>. We do not knowingly collect data from anyone under 18.
+            If we become aware that a user is under 18, we will remove the account and associated data.
         </p>
 
         <h2>8. Notifications</h2>
         <p>
-            We may send push notifications related to tournaments, updates, and announcements using **Firebase Cloud Messaging (FCM)**.
+            We may send push notifications related to tournaments, updates, and announcements using <strong>Firebase Cloud Messaging (FCM)</strong>.
         </p>
 
         <h2>9. Third-Party Services</h2>
@@ -214,36 +243,60 @@
             We use third-party services to support the functionality of the App. These services include:
         </p>
         <ul>
-            <li>**Firebase Authentication** – for login and account management</li>
-            <li>**Firebase Firestore** – for storing user and tournament data</li>
-            <li>**Firebase Analytics** – for tracking user behavior and improving the app</li>
-            <li>**Firebase Crashlytics** – for monitoring app crashes and performance</li>
-            <li>**Firebase Cloud Messaging (FCM)** – for sending notifications</li>
-            <li>**Google Sign-In** – for authentication via Google</li>
-            <li>**WhatsApp & YouTube** – for external links (e.g., tournament group links, instructional videos)</li>
+            <li><strong>Firebase Authentication</strong> – for login and account management</li>
+            <li><strong>Firebase Firestore</strong> – for storing user and tournament data</li>
+            <li><strong>Firebase Storage</strong> – for storing profile images and payment receipts</li>
+            <li><strong>Firebase Remote Config</strong> – for delivering app configuration</li>
+            <li><strong>Firebase Analytics</strong> – for tracking user behavior and improving the app</li>
+            <li><strong>Firebase Crashlytics</strong> – for monitoring app crashes and performance</li>
+            <li><strong>Firebase Cloud Messaging (FCM)</strong> – for sending notifications</li>
+            <li><strong>Google Sign-In</strong> – for authentication via Google</li>
+            <li><strong>Google AdMob</strong> – for displaying advertisements</li>
+            <li><strong>WhatsApp &amp; YouTube</strong> – for external links (e.g., tournament group links, community channels, instructional videos)</li>
         </ul>
 
-        <h2>10. Changes to This Policy</h2>
+        <h2 id="advertising">10. Advertising</h2>
+        <p>
+            The App displays advertisements served by <strong>Google AdMob</strong>, a third-party advertising service
+            provided by Google. To serve and measure ads, AdMob may collect and process:
+        </p>
+        <ul>
+            <li>Your device's <strong>Advertising ID</strong></li>
+            <li>Your <strong>IP address</strong> and approximate (city-level) location derived from it</li>
+            <li>Device information and ad interaction data (views and clicks)</li>
+        </ul>
+        <p>
+            This data is used for ad serving, frequency capping, ad measurement, and fraud prevention. Google processes
+            this data in accordance with its own privacy policy. You can learn how Google uses data from apps that use
+            its services at
+            <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>.
+        </p>
+        <p>
+            You can reset your Advertising ID or opt out of ad personalization at any time in your device settings
+            under <strong>Settings → Google → Ads</strong>.
+        </p>
+
+        <h2>11. Changes to This Policy</h2>
         <p>
             We may update this Privacy Policy periodically. Any changes will be effective immediately upon posting. The effective date of the updated policy will be reflected at the top of this page.
         </p>
 
-        <h2>11. Force App Updates</h2>
+        <h2>12. Force App Updates</h2>
         <p>
-            To ensure your app stays up to date with new features and security updates, **Battle Arena – Tournaments** may require mandatory app updates to continue usage. Users will be notified when an update is available.
+            To ensure your app stays up to date with new features and security updates, <strong>Battle Arena – Tournaments</strong> may require mandatory app updates to continue usage. Users will be notified when an update is available.
         </p>
 
-        <h2>12. Contact Us</h2>
+        <h2>13. Contact Us</h2>
         <p>
             If you have any questions or concerns about this Privacy Policy, please contact us at:
         </p>
         <p>
             📧 Email: <strong>studio.developer95@gmail.com</strong><br>
-            📍 Country: **Pakistan**
+            📍 Country: <strong>Pakistan</strong>
         </p>
 
         <footer>
-            © 2025 Battle Arena – Esports Tournaments PK. All rights reserved.
+            © 2026 Battle Arena – Esports Tournaments PK. All rights reserved.
         </footer>
 
     </div>
